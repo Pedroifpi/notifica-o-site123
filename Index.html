@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliação e Notificações</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <div class="review-section">
+        <h2>Deixe sua Avaliação</h2>
+        <form id="reviewForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="review">Comentário:</label>
+            <textarea id="review" name="review" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="notification-section">
+        <h2>Configurar Notificações</h2>
+        <form id="notificationForm">
+            <label>
+                <input type="checkbox" name="notifications" value="scheduleUpdates"> Atualizações de Horários
+            </label>
+            <label>
+                <input type="checkbox" name="notifications" value="promotions"> Promoções
+            </label>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
